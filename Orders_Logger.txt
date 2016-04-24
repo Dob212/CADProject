@@ -1,0 +1,5 @@
+New Order by user admin admin: Logger Test Event, travel supplied: 30 + food supplied: 25 + test for logger file, 20:00, 70.0
+New Order by user admin admin: Logger Test Event, travel supplied: 30 + food supplied: 25 + test for logger file, 20:00, 70.0
+New Order by user admin admin: Pub Crawl, travel supplied: 30 + food supplied: 25 + Event: Pub CrawlDescriptionevent with pubs, 20:00, 80.0
+New Order by user admin admin: Logger Test Event, food supplied: 25 + test for logger file, 20:00, 40.0
+New Order by user admin admin: Pub Crawl, travel supplied: 30 + food supplied: 25 + event with pubs, 20:00, 100.0

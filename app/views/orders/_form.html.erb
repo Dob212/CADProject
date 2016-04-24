@@ -1,0 +1,44 @@
+<%= form_for([@profile, @order]) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br>
+    <%= f.text_field :oname, :value => @order.oname, readonly: true %>
+    </div>
+  <div class="field">
+    <%= f.label :Description %><br>
+    <%= f.text_field :odescription, :value => @order.odescription, readonly: true %>
+  </div>
+  <div class="field">
+    <%= f.label :Time %><br>
+    <%= f.text_field :otime, :value => @order.otime, readonly:true %>
+  </div>
+  <div class="field">
+    <%= f.label :Cost %><br>
+    <%= f.text_field :ocost, :value => @order.ocost, readonly: true %>    
+  </div>
+  <div class="field">
+    <%= f.label :profile_id %><br>
+    <%= f.text_field :profile_id, readonly: true %>
+  </div>
+  <div class="field">
+    Food optional: <%= check_box_tag 'order[food]', 'food' %>
+  </div>
+  <div class="field">
+    Transport optional: <%= check_box_tag 'order[travel]', 'travel' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @profile.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @profile.lastname %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @profile.address %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @profile.user %>
+</p>
+
+<h2>Orders</h2>
+<% @profile.orders.each do |o|%>
+	<p>
+  <table>
+    <tbody>
+      <tr>
+        <td><b>Order name:</b> <%= o.oname %></td>
+        <td><b>Description:</b><%= o.odescription %></td>
+        <td><b>Time: </b><%= o.otime %></td>
+        <td><b>Cost: </b><%= o.ocost %></td>
+        <td><b>Link: </b><%= link_to 'Show', profile_order_path(@profile, o) %></td>
+      </tr>
+    </tbody>
+  </table>
+	</p>
+
+<%end%>
+
+<!--<%= link_to 'Edit', edit_profile_path(@profile) %> -->
+<%= link_to 'Events', events_path %>
+<%= link_to 'Back', profiles_path %>

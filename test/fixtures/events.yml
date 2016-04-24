@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ename: MyString
+  edescription: MyString
+  etime: MyString
+  ecost: MyString
+
+two:
+  ename: MyString
+  edescription: MyString
+  etime: MyString
+  ecost: MyString

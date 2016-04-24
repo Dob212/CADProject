@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  oname: MyString
+  odescription: MyString
+  otime: MyString
+  ocost: 9.99
+  profile_id: 
+
+two:
+  oname: MyString
+  odescription: MyString
+  otime: MyString
+  ocost: 9.99
+  profile_id: 

@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @order.oname %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @order.odescription %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @order.otime %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @order.ocost %>
+</p>
+
+<%= link_to 'New Order', new_profile_order_path(@profile, :param2 => @order.oname) %>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
